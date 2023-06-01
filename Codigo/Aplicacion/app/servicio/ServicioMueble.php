@@ -2,7 +2,7 @@
 
 namespace app\servicio;
 
-use app\repositorio\RepositorioMueble;
+use app\repositorio\Mapper;
 
 /**
  * @author GOLA BARRIA, Vanina
@@ -15,7 +15,7 @@ class ServicioMueble
 
     public function __construct()
     {
-        $this->repositorio = new RepositorioMueble();
+        $this->repositorio = new Mapper();
     }
 
     public function borrar($id)

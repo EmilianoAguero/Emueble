@@ -4,13 +4,13 @@ namespace app\repositorio;
 
 use app\modelo\Mueble;
 use app\repositorio\BDConexion;
-
+use app\repositorio\IMapper;
 /**
  * @author GOLA BARRIA, Vanina
  * @author AGUERO, Emiliano
  * @author MARQUEZ, Emanuel
  */
-class RepositorioMueble
+class Mapper implements IMapper
 {
     public function borrar($id)
     {
