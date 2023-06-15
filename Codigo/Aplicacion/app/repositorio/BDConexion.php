@@ -19,7 +19,7 @@ class BDConexion extends mysqli
     {
         try {   
             global $g_db_hostname, $g_db_basename, $g_db_username, $g_db_password;
-            parent::__construct('localhost', 'root', '', 'emueble');
+            parent::__construct($g_db_hostname, $g_db_username, $g_db_password, $g_db_basename);
         } catch (Exception $e) {
             die($e->getMessage());
         }
