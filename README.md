@@ -71,11 +71,6 @@ Por favor, asegúrese de seguir nuestras pautas de contribución y de prueba ant
 Pautas de contribución
 Para mantener el código de alta calidad en este repositorio, siga estas pautas de contribución:
 
-Cada solicitud de extracción debe tener un propósito claro y una descripción detallada de los cambios realizados.
-El código debe seguir las convenciones de codificación de PHP.
-Agregue pruebas unitarias para cualquier nueva funcionalidad o corrección de errores que agregue.
-No modifique el código que no está relacionado con su contribución.
-Gracias por su contribución y esperamos trabajar con usted para mejorar este repositorio de PHP.
 
 Es importante tener en cuenta que algunos archivos pueden requerir la instalación de dependencias externas, como bibliotecas de terceros o extensiones de PHP. Asegúrese de leer los archivos README en cada carpeta para obtener más información sobre los requisitos específicos.
 
