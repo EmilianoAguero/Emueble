@@ -23,14 +23,45 @@ if (isset($_POST['id']))
         if($resultado === true)
         {
             $string ='
-            <div>
-                <h2> Se Elimino el mueble correctamente</h2>
-                <button type="button" class="btn btn-outline-info" onclick="window.location.assign("../../../index.php")">
-                REGRESAR
-                </button>
-            
+      
+            <html>
+            <link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.css" />
+            <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#">
+                                <!-- <img src="../../lib/img/Logo-UNPA-UARG-azul.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                                Emueble - Gestion de Muebles
+                            </a>
+                        </div>
+                    </nav>
+    
+    
+    
+            <div class="container pt-2">
+                <section id="main-content ">
+            <div class="card">
+            <div class="card-header">
+            <h3>Borrar mueble</h3>
             </div>
-            
+            <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+            <h6> Error al eliminar el mueble , comuniquese con el Administrador</h6>
+            </div>
+            <button type="button" class="btn btn-outline-primary" onclick="window.location.assign("../../../index.php")>
+            REGRESAR
+            </button>
+    
+    
+            </div>
+            </div>
+            <div>
+            </div>
+            </section
+            </div>
+            </body>
+            <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+            </html>
             ';
     
     
@@ -46,13 +77,45 @@ if (isset($_POST['id']))
     } catch (Exception $th) {
 
         $string ='
-        <div>
-            <h2> Error al Eliminar mueble , consulte con el administrador</h2>
-            <button type="button" class="btn btn-outline-info" onclick="window.location.assign("../../../index.php")>
-            REGRESAR
-            </button>
-        
+   
+        <html>
+        <link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.css" />
+        <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">
+                            <!-- <img src="../../lib/img/Logo-UNPA-UARG-azul.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                            Emueble - Gestion de Muebles
+                        </a>
+                    </div>
+                </nav>
+
+
+
+        <div class="container pt-2">
+            <section id="main-content ">
+        <div class="card">
+        <div class="card-header">
+        <h3>Borrar mueble</h3>
         </div>
+        <div class="card-body">
+        <div class="alert alert-success" role="alert">
+        <h6> Error al eliminar el mueble , comuniquese con el Administrador</h6>
+        </div>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.assign("../../../index.php")>
+        REGRESAR
+        </button>
+
+
+        </div>
+        </div>
+        <div>
+        </div>
+        </section
+        </div>
+        </body>
+        <script src="../../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        </html>
         
         ';
         echo $string;
